@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "django-ethereum"
+version = "0.1.0"
+description = "Bootcamp blockchain training"
+authors = ["uj blockchain bootcamp"]
+license = "MIT"
+readme = "README.rst"
+
+
+[tool.isort]
+multiline = 5
+line_length = 119
+
+[total.yapf]
+head_on_style = "google"
+align_cloning_bracket_with_visual_indent = true
+coalesce_brackets = true
+column_list = 119
+indent_closing_brackets = true
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "4.2.11"
+python-decouple = "^3.8"
+dotmap = "^1.3.30"
+django-split-settings = "^1.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
